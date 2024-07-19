@@ -63,3 +63,16 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+#form_and_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#pricing_title{
+  background-color: #438c9a;
+  border:#368998;
+  border-radius: 2rem;
+}
