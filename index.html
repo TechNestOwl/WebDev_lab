@@ -73,7 +73,7 @@
             <p> <ol>
                 <li>"Publish, Promote, and Maintain a Website (chapter 11)."<br>
                 <p>
-                    <b>Understanding:</b>  I am to publish this website online with a domain name, here it is. <a href="#">www.ffitnessclub.com</a>
+                    <b>Understanding:</b>  I am to publish this website online with a domain name, here it is. <a href="https://chattfitnessclub.netlify.app/">www.ffitnessclub.com</a>
                 </p>
                 </li>
                     <li>"Getting Started with Bootstrap (chapter 12). You can find more information on this work from the course textbook chapters 11&12."<br>
@@ -83,10 +83,43 @@
                 </ol>
             </p>
         </div>
+        <div id="workout_form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Select workout type:</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="workoutType" id="cardio" value="Cardio" required>
+                        <label class="form-check-label" for="cardio">
+                            Cardio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="workoutType" id="upperBody" value="Upper-body" required>
+                        <label class="form-check-label" for="upperBody">
+                            Upper-body
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="workoutType" id="lowerBody" value="Lower-body" required>
+                        <label class="form-check-label" for="lowerBody">
+                            Lower-body
+                        </label>
+                    </div>
+                </div>
+                <!-- currently, this button is set to just reload the page as nothing is being submitted. -->
+                <button type="submit" class="btn btn-primary" onClick="window.location.reload()"> Submit</button> 
+            </form>
+        </div>
+        </div>
 
          </div>
          <div class="container mt-5">
-            <h2 class="text-center mb-4">Fitness Club Pricing</h2>
+            <h2 class="text-center mb-4">Student Fitness Club Pricing</h2>
             <table  class="table table-bordered table-striped table-hover">
                 <thead class="thead-dark">
                     <tr>
@@ -128,6 +161,8 @@
     </main>
 </body>
 <footer id="footer" class="bg-primary text-white text-center py-3">
+    <img src="assets/chatt_tech.png">
+
                 <p>This work was created and published by Gill Guimaraes using Bootstrap for styling.</p>
     
 </footer>
