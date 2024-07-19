@@ -76,3 +76,6 @@ footer {
   border:#368998;
   border-radius: 2rem;
 }
+.no_bullets{
+    list-style: none;
+}
