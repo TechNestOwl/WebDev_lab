@@ -147,3 +147,20 @@ July 20, 2024
     flex: 1;
     padding: 5px;
 }
+/* landing page left col */
+.custom-list {
+    padding: 0;
+    list-style-type: none;
+}
+.custom-list li {
+    background-color: #b1b2b2; /* Light gray background */
+    border: 1px solid #dee2e6; /* Light border */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    transition: background-color 0.2s, box-shadow 0.3s;
+}
+.custom-list li:hover {
+    background-color: #e9ecef; /* Slightly darker gray on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
