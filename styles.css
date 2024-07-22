@@ -87,7 +87,7 @@ July 20, 2024
     background-color: #f2f2f2;
 }
 .banner {
-    background-image: url('assets/img1.jpg'); 
+    background-image: url('assets/risen-wang-20jX9b35r_M-unsplash.jpg'); 
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -110,7 +110,7 @@ July 20, 2024
     background-size: cover;
     background-position: center;
     color: #232020;
-    height: 400px;
+    height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
