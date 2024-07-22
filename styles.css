@@ -1,86 +1,149 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+/* 
+Guilherme Guimaraes 
+CIST 1510(Web Dev) 
+July 20, 2024
+*/
 
-.social_media_container{
-    background-color: #214b53;
-}
-.jumbotron {
-    background-color: #c4d4e4;
-}
 
-.navbar-brand, .nav-link {
-    color: #fff !important;
-}
 
-.navbar-nav .nav-item.active .nav-link {
-    font-weight: bold;
-}
-
-.table {
-    background-color: #ffffff;
-}
-
-.table thead th {
-    background-color: #343a40;
-    color: #ffffff;
-}
-
-.table-hover tbody tr:hover {
-    background-color: #f1f1f1;
-}
-
-.table-bordered {
-    border: 2px solid #214b53;
-}
-
-.table-bordered th,
-.table-bordered td {
-    border: 1px solid #343a40;
-}
-
-footer {
-    background-color: #368998;
-}
-#content_link{
-    color: black;
-    text-decoration: none;
-}
-
-#banner{
-    color:#438c9a;
-}
-
-.banner_subtext{
-    color:#438c9a;
-}
-
-#workout_form{
+.hero {
+    background-image: url("assets/gymHero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+    text-align: center;
 }
-
-#form_and_title{
+.hero_me {
+    background-image: url("assets/me.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    color: rgb(14, 14, 14);
+    text-align: center;
+}
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
 }
 
-#pricing_title{
-  background-color: #438c9a;
-  border:#368998;
-  border-radius: 2rem;
-}
 .no_bullets{
     list-style: none;
 }
 
-#portfolio_link{
-    color: black
-    
+#about_dev{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-column {
+    background-color: #224469; /* Dark blue */
+    color: rgb(0, 0, 0);
+}
+.center-column {
+    background-color: #f8f9fa; /* Light background */
+    padding: 20px;
+}
+
+.benefits-list {
+    list-style-type: none;
+    padding: 0;
+}
+.benefits-list li {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.benefits-list li:nth-child(even) {
+    background-color: #e9ecef;
+}
+#list_title{
+    color: white;
+}
+
+.table-container {
+    margin: 20px;
+}
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+.table thead th {
+    background-color: #007bff;
+    color: white;
+}
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.banner {
+    background-image: url('assets/img1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+}
+.banner h1 {
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.banner_me {
+    background-image: url('assets/me.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #232020;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+}
+.banner h1 {
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* About page */
+
+.about-section {
+    padding: 40px 0;
+}
+.about-text {
+    padding-right: 20px;
+}
+.about-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.about-images .row {
+    display: flex;
+    justify-content: space-between;
+}
+.about-images .col-4 {
+    flex: 1;
+    padding: 5px;
 }

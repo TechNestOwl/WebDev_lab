@@ -1,9 +1,17 @@
 <!DOCTYPE html>
+
+<!-- 
+Guilherme Guimaraes 
+CIST 1510(Web Dev) 
+July 20, 2024
+ -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chattahoochee Fitness Club</title>
+    
+    <title>Complete Fitness - Free Trial | Forward Fitness Club</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -16,150 +24,107 @@
     </header>
     <main>
         
-    <div class="container mt-5">
-        <div id="home" class="jumbotron bg-light text-primary">
-            <h1 class="display-4" id="banner">Chattahoochee Fitness Club</h1>
-            <p class="lead" id=""banner_subtext><h5>Lab Assignment #6</h5>
-                <p>Gill Guimaraes<br>July 18,2024<br>CIST 1510 - Web Development I.</p>
-                <!-- This "skip to content" button will link users directly down to the pricing table -->
-                <button type="button" class="btn btn-primary"><a id="content_link" href="#content">Skip to content</a> </button>
-        </div>
-        <div class="container mt-5">
-            <div class="social_media_container">
-                <div class="mb-2">
-                    <a href="https://www.facebook.com" target="_blank" class="text-white mx-2">
-                        <i class="fab fa-facebook-f">Facebook</i>
-                    </a>
-                    <a href="https://www.twitter.com" target="_blank" class="text-white mx-2">
-                        <i class="fab fa-twitter">Twitter | X</i>
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank" class="text-white mx-2">
-                        <i class="fab fa-instagram">Instagram</i>
-                    </a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.png" height="130px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="classes.html">Classes</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More..
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="about.html">About</a>
+                    <!-- <a class="dropdown-item" href="#">Creator Info</a> -->
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="me.html">Creator Info</a>
+                  </div>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li> -->
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+      
+           <!-- Header and Hero Image -->
+            <header class="hero">
+              <div class="overlay">
+                  <h1 class="display-4">Welcome to the Forward Fitness Club</h1>
+                  <p class="lead">Train with us. Gain with us.</p>
+                  <a href="#" class="btn btn-primary btn-lg">Sign Up Today</a>
+              </div>
+          </header>
+      
+
+          <!-- Here I will resume my work. 12-3q in the textbook "Add Columns Using Bootstrap" -->
+            <div class="row">
+                <div class="col-md-2 side-column">
+                   
+                </div>
+                <div class="col-md-8 center-column">
+                    <div class="container">
+                        <div class="form-container">
+                            <h2 class="mb-4">Chatt Tech Students, sign up for our fitness class!</h2>
+                            <form>
+                                <div class="form-group">
+                                    <label for="studentName">Name</label>
+                                    <input type="name" class="form-control" id="studentName" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="studentEmail">Student Email</label>
+                                    <input type="email" class="form-control" id="studentEmail" placeholder="Enter email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="age">Age</label>
+                                    <input type="number" class="form-control" id="age" placeholder="Enter age" min="1" max="100" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="fitnessLevel">Fitness Level (1-10)</label>
+                                    <input type="range" class="form-control-range" id="fitnessLevel" min="1" max="10">
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Let's Workout!</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 side-column">
+                    <div class="container">
+                        <h4 id="list_title" class="mb-4">Benefits of Exercises</h4>
+                        <ul class="benefits-list">
+                            <li>Improves cardiovascular health.</li>
+                            <li>Enhances mental health and mood.</li>
+                            <li>Helps with weight management.</li>
+                            <li>Boosts energy levels and stamina.</li>
+                            <li>Strengthens muscles and bones.</li>
+                            <li>Improves sleep quality.</li>
+                            <li>Reduces the risk of chronic diseases.</li>
+                            <li>Promotes better flexibility and balance.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-
-       
-    </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/img1.jpg" class="d-block w-100" alt="Image 1">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img2.jpg" class="d-block w-100" alt="Image 2">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img4.jpg" class="d-block w-100" alt="Image 3">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-        
-        <div id="form_and_title">
-            <h3>Sign up for a group workout!</h3>
-            <div id="workout_form">
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Student Email:</label>:</label>
-                        <input type="text" class="form-control" id="email" placeholder="Enter student email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Select workout type:</label><br>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="workoutType" id="cardio" value="Cardio" required>
-                            <label class="form-check-label" for="cardio">
-                                Cardio
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="workoutType" id="upperBody" value="Upper-body" required>
-                            <label class="form-check-label" for="upperBody">
-                                Upper-body
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="workoutType" id="lowerBody" value="Lower-body" required>
-                            <label class="form-check-label" for="lowerBody">
-                                Lower-body
-                            </label>
-                        </div>
-                    </div>
-                    <!-- currently, this button is set to just reload the page as nothing is being submitted. -->
-                    <button type="submit" class="btn btn-primary" onClick="window.location.reload()"> Submit</button> 
-                </form>
-            </div>
-
-
-
-        </div>
-        </div>
-
-         </div>
-         <div class="container mt-5">
-            <div id="pricing_title">
-                <h2 class="text-center mb-4">Student Fitness Club Pricing</h2>
-            </div>
-            <table  class="table table-bordered table-striped table-hover">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Membership Type</th>
-                        <th>Monthly Price</th>
-                        <th>Quarterly Price</th>
-                        <th>Annual Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Basic</td>
-                        <td>FREE</td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>Standard</td>
-                        <td>$35</td>
-                        <td>$95</td>
-                        <td>$350</td>
-                    </tr>
-                    <tr>
-                        <td>Premium</td>
-                        <td>$50</td>
-                        <td>$135</td>
-                        <td>$500</td>
-                    </tr>
-                    <tr>
-                        <td>Family</td>
-                        <td>$80</td>
-                        <td>$220</td>
-                        <td id="content">$800</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
     
     </main>
 </body>
-<footer id="footer" class="bg-primary text-white text-center py-3">
-    <div class="my-5">
+
+<footer id="footer" class="bg-dark text-white text-center py-3">
+    <!-- <div class="my-5">
         <h2>Assignment Instructions:</h2>
         <p> <ul class="no_bullets">
             <li>"Publish, Promote, and Maintain a Website (chapter 11)."<br>
@@ -173,10 +138,12 @@
                     </p></li>
             </ul>
         </p>
-    </div>
-    <img src="assets/chatt_tech.png">
+    </div> -->
+    <img src="assets/chatt_tech.png" height="120px">
 
-                <p>This work was created and published by Gill Guimaraes using Bootstrap for styling.</p>
+                <p>Guilherme Guimaraes<br>
+                    CIST 1510(Web Dev)<br> 
+                    July 20, 2024</p>
                <h4>Take a look at 
                    <a id="portfolio_link" href="https://gillguimaraes.netlify.app/">My Portfolio</a>
                </h4>
@@ -185,6 +152,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src=“script.js”></script> 
 
 
 </html>
